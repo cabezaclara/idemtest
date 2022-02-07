@@ -39,6 +39,7 @@
 .green-blocks__third {
   grid-area: gr3;
   position: relative;
+  overflow: hidden;
 }
 
 .green-blocks__third::after {
