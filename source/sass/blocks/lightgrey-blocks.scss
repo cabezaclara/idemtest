@@ -1,0 +1,29 @@
+.lightgrey-blocks {
+  grid-area: lightgrey;
+  display: grid;
+  grid-template:
+      "lg1 lg2"
+      "lg3 lg3" /
+      1fr 1fr;
+  gap: 10px;
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    grid-template:
+      "lg1 lg2" 155px
+      "lg3 lg3" 155px /
+      1fr 1fr;
+    gap: 10px;
+  }
+}
+
+.lightgrey-blocks__first  {
+  grid-area: lg1;
+}
+
+.lightgrey-blocks__second  {
+  grid-area: lg2;
+}
+
+.lightgrey-blocks__third {
+  grid-area: lg3;
+}

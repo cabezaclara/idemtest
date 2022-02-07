@@ -1,0 +1,9 @@
+.blur-ie {
+  display: none;
+}
+
+html[data-agent*="Trident"] .green-blocks__third:hover .block--image {
+  display: none; }
+
+html[data-agent*="Trident"] .green-blocks__third:hover .blur-ie {
+  display: block; }

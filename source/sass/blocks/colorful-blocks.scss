@@ -1,0 +1,29 @@
+.colorful-blocks {
+  grid-area: colorful;
+  display: grid;
+  grid-template:
+      "cf1 cf1"
+      "cf2 cf3" /
+      1fr 1fr;
+  gap: 10px;
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    grid-template:
+      "cf1 cf1" 155px
+      "cf2 cf3" 155px /
+      1fr 1fr;
+    gap: 10px;
+  }
+}
+
+.colorful-blocks__first {
+  grid-area: cf1;
+}
+
+.colorful-blocks__second {
+  grid-area: cf2;
+}
+
+.colorful-blocks__third {
+  grid-area: cf3;
+}

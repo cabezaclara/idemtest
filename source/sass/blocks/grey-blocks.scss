@@ -1,0 +1,46 @@
+.grey-blocks {
+  grid-area: grey;
+  display: grid;
+  grid-template:
+    "g1 g1 g2"
+    "g1 g1 g3" /
+    1fr 1fr 1fr;
+  gap: 6.6px;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+    grid-template:
+      "g1 g1 g2"
+      "g1 g1 g3" /
+      1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    grid-template:
+    "g1 g1 g2" 241px
+    "g1 g1 g3" 241px /
+    1fr 1fr 1fr;
+    gap: 10px;
+  }
+}
+
+.grey-blocks__first {
+  grid-area: g1;
+  position: relative;
+  overflow: hidden;
+}
+
+.grey-blocks__first::before {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.grey-blocks__second {
+  grid-area: g2;
+}
+
+.grey-blocks__third {
+  grid-area: g3;
+}

@@ -1,0 +1,38 @@
+.personal-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px dashed $basic-black;
+}
+
+.personal-data__title,
+.personal-data__content {
+  margin: 0;
+  position: relative;
+  bottom: -5px;
+  background-color: inherit;
+
+  & span {
+    background-color: $special-green;
+  }
+}
+
+.personal-data__title {
+  flex-basis: 50%;
+  text-align: left;
+  justify-self: flex-start;
+
+  & span {
+    padding-right: 10px;
+  }
+}
+
+.personal-data__content {
+  flex-basis: 45%;
+  text-align: right;
+  justify-self: flex-end;
+
+  & span {
+    padding-left: 10px;
+  }
+}
